@@ -1,18 +1,18 @@
 h2 {
-    color: #6E1F1F;
-    font-family: 'Libertinud Serif';
+  color: #6e1f1f;
+  font-family: "Ubuntu", sans-serif;
 }
 .center {
-    text-align: center;
+  text-align: center;
 }
 .contain {
-    overflow: hidden;
+  overflow: hidden;
 }
 .lf {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 .rg {
-    float: right;
-    width: 50%;
+  float: right;
+  width: 50%;
 }
