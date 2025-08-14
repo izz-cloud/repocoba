@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    
+<link rel="stylesheet" href="style.css"/>
+<head>
+<title>Form Registrasi</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Formulir Pendaftaran Siswa Baru</h1>
+        <form action="proses.php" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama: </label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="kelas">Kelas:</label><br>
+        <input type="kelas" id="kelas" name="kelas" required><br><br>
+        <label for="jurusan">Jurusan: </label><br>
+        <input type="jurusan" id="jurusan" name="jurusan" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+        <label>Ekstra/Intrakulikuler: </label><br>
+        <input type="checkbox" name="hobi[]" value="Basket"> Basket
+        <input type="checkbox" name="hobi[]" value="Futsal"> Futsal
+        <input type="checkbox" name="hobi[]" value="Esport"> Esport
+        <input type="checkbox" name="hobi[]" value="English"> English
+        <input type="checkbox" name="hobi[]" value="Japanese"> Japanese <br>
+        </select><br>
+        <label for="foto">Upload Foto: </label><br>
+        <input type="file" name="foto" accept="image/*"><br><br>
+        <label for="alamat">Minat Dan Bakat: </label><br>
+        <textarea name="minatbakat" id="alamat" rows="4" cols="40"
+        required></textarea><br><br>
+        <input type="submit" value="Kirim">
+    </div>
+</form>
+</body>
+</html>

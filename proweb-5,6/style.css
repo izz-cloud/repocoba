@@ -1,0 +1,18 @@
+h2 {
+    color: #6E1F1F;
+    font-family: 'Libertinud Serif';
+}
+.center {
+    text-align: center;
+}
+.contain {
+    overflow: hidden;
+}
+.lf {
+    float: left;
+    width: 50%;
+}
+.rg {
+    float: right;
+    width: 50%;
+}
