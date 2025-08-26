@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flexbox Navbar</title>
+<style>
+/* ====== GLOBAL ====== */
+* { box-sizing: border-box; } /* Hitung padding+border dalam width */
+body { margin:0; font-family: system-ui, sans-serif; }
+
+/* ====== NAVBAR ====== */
+.nav {
+  display: flex; /* jadikan flex-container */
+  justify-content: space-between; /* brand di kiri, menu di kanan */
+  align-items: center; /* vertikal tengah */
+  padding: 12px 20px;
+  background: #0f172a; /* slate-900 */
+  color: #fff;
+  gap: 12px; /* jarak antar anak */
+}
+.nav .brand { font-weight: 700; }
+.nav .menu {
+  display: flex; /* menu juga flex */
+  gap: 16px;
+}
+.nav a { color:#cbd5e1; text-decoration:none; }
+.nav a:hover { color:#fff; }
+
+/* ====== HERO ====== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px 20px;
+  background: #f8fafc; /* slate-50 */
+}
+.hero .text { max-width: 520px; }
+.btn {
+  display:inline-block; padding:10px 16px; border-radius:8px;
+  background:#2563eb; color:#fff; text-decoration:none;
+}
+.btn:hover { background:#1d4ed8; }
+
+.gallery {
+  display: grid; /* aktifkan grid 2D */
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom sama lebar */
+  gap: 16px; /* jarak antar kartu */
+  padding: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+.card img { 
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.card h3 { 
+  margin: 10px 0 6px; 
+}
+
+.card p { 
+  margin: 0; 
+  color: #475569; 
+}
+
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="brand">MySite</div> <!-- item 1 -->
+  <div class="menu"> <!-- item 2 -->
+    <a href="#">Profile</a>
+    <a href="#">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="text">
+    <h1>Bangun Website Modern</h1>
+    <p>Flexbox memudahkan perataan horizontal/vertikal dan distribusi ruang.</p>
+    <a class="btn" href="#">Mulai Sekarang</a>
+  </div>
+  <img src="https://via.placeholder.com/420x260" alt="Ilustrasi" />
+  <section class="gallery">
+  <article class="card">
+    <img src="https://via.placeholder.com/600x380" alt="">
+    <h3>Project 1</h3>
+    <p>Deskripsi singkat.</p>
+  </article>
+
+  <article class="card">
+    <img src="https://via.placeholder.com/600x380" alt="">
+    <h3>Project 2</h3>
+    <p>Deskripsi singkat.</p>
+  </article>
+
+  <article class="card">
+    <img src="https://via.placeholder.com/600x380" alt="">
+    <h3>Project 3</h3>
+    <p>Deskripsi singkat.</p>
+  </article>
+
+  <!-- Tambah kartu lain... -->
+</section>
+</body>
+</html>
+
+

@@ -1,0 +1,46 @@
+body{
+    background-color: dimgrey;
+}
+#judul{
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.1);
+    color: black;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    overflow: hidden;
+
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    border: 10px solid whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    transition: transform 2s;
+}
+
+.card:hover {
+    background: bisque;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+    border: 10px solid burlywood;
+    transform: translateY(50px);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.gambar {
+    max-width: 220px;
+    max-height: 220px;
+    margin-right: 5px;
+}
+.lf {
+    text-align: left;
+}
+p {
+    font-size: 20px;
+}
